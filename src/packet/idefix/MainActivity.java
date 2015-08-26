@@ -57,7 +57,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
 		text = new TextView(this);
-		text.setText("void");
+		text.setText("Bienvenue sur IdeFix choisisez une serie pour commencer");
 		llt.addView(text);
 		
 		sw.addView(llt);
@@ -113,7 +113,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	}
 
 public void genButton(String[] ml,boolean AffMenu,String[] menu,boolean affMbutton){
-
+	AffMenu=true;
 	mllength=ml.length;
 	if(AffMenu){
 		Button menubt[] = new Button[menu.length];
