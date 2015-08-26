@@ -21,9 +21,10 @@ import android.widget.TextView;
 public class MainActivity extends Activity implements View.OnClickListener {
 	String fina[] = new String[99];
 	String vide[] = new String[0];
-	String menu[] = new String[] {"Southpark", "Simpson", "Asterisk"};
+	String menu[] = new String[] {"Southpark", "Simpson", "St@r-W@r5"};
 	String PersonagesSouth[] = new String[] {"casabonita_juif", "casabonitajew1", "casabonitajew10", "casabonitajew11", "casabonitajew12", "casabonitajew2", "casabonitajew3", "casabonitajew4", "casabonitajew5", "casabonitajew6", "casabonitajew7", "casabonitajew8", "casabonitajew9"};
 	String PersonagesSimpson[] = new String[] {"cavapas", "hopital","salade","croquemitaine","idiot","singe","douche","isocele","sirop","endormi","krapabell","teloche","ensemble","puissant","tv","gym","radio","xfiles"};
+	String PersonagesChewi[] = new String[] {"chewi", "chewi1", "chewi10", "chewi11", "chewi12", "chewi13", "chewi14", "chewi15", "chewi16", "chewi17", "chewi18", "chewi19", "chewi2", "chewi20", "chewi3", "chewi4", "chewi5", "chewi6", "chewi7", "chewi8" ,"chewi9"};
 	LinearLayout llt;
 	Button b1,b2,b3;
 	MediaPlayer mp;
@@ -80,7 +81,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			sw.removeAllViews();llt.removeAllViews();genButton(PersonagesSimpson,false,menu,true);sw.addView(llt);
 			
 		}else if(v.getId()==mllength+2){
-			sw.removeAllViews();llt.removeAllViews();genButton(Southpark,false,menu,true);sw.addView(llt);
+			sw.removeAllViews();llt.removeAllViews();genButton(PersonagesChewi,false,menu,true);sw.addView(llt);
 			
 		}else{
 			
