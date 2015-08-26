@@ -169,10 +169,4 @@ public void genButton(String[] ml,boolean AffMenu,String[] menu,boolean affMbutt
 }
 
 
-
-
-//ajout du commentaire
-
-
-
 }
