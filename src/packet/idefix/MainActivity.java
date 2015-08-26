@@ -1,4 +1,4 @@
-package com.example.themplay;
+package packet.idefix;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -22,7 +22,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	String fina[] = new String[99];
 	String vide[] = new String[0];
 	String menu[] = new String[] {"Southpark", "Simpson", "Asterisk"};
-	String PersonagesSouth[] = new String[] {"Cartman", "Servetsky", "Chewi","Autre"};
+	String PersonagesSouth[] = new String[] {"casabonita_juif", "casabonitajew1", "casabonitajew10", "casabonitajew11", "casabonitajew12", "casabonitajew2", "casabonitajew3", "casabonitajew4", "casabonitajew5", "casabonitajew6", "casabonitajew7", "casabonitajew8", "casabonitajew9"};
+	String PersonagesSimpson[] = new String[] {"cavapas", "hopital","salade","croquemitaine","idiot","singe","douche","isocele","sirop","endormi","krapabell","teloche","ensemble","puissant","tv","gym","radio","xfiles"};
 	LinearLayout llt;
 	Button b1,b2,b3;
 	MediaPlayer mp;
@@ -34,7 +35,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	int mllength=0;
 	int returnId=500;
 	
-	String Southpark[] = new String[] {"casabonita_juif", "casabonitajew1", "casabonitajew10", "casabonitajew11", "casabonitajew12", "casabonitajew2", "casabonitajew3", "casabonitajew4", "casabonitajew5", "casabonitajew6", "casabonitajew7", "casabonitajew8", "casabonitajew9", "chewi", "chewi1", "chewi10", "chewi11", "chewi12", "chewi13", "chewi14", "chewi15", "chewi16", "chewi17", "chewi18", "chewi19", "chewi2", "chewi20", "chewi3", "chewi4", "chewi5", "chewi6", "chewi7", "chewi8" ,"chewi9", "fait_le" ,"fait_ton_gr", "greuh", "il_est_rate", "jeanpierre" ,"jetmpapa", "jevsdemandedevsart", "papa_y_senva", "servietsky1", "servietsky10", "servietsky11", "servietsky12", "servietsky13", "servietsky14", "servietsky15", "servietsky16", "servietsky2", "servietsky3", "servietsky4", "servietsky5", "servietsky6", "servietsky7", "servietsky8", "servietsky9"};
+	String Southpark[] = new String[] {"casabonita_juif", "casabonitajew1", "casabonitajew10", "casabonitajew11", "casabonitajew12", "casabonitajew2", "casabonitajew3", "casabonitajew4", "casabonitajew5", "casabonitajew6", "casabonitajew7", "casabonitajew8", "casabonitajew9","fait_ton_gr", "greuh", "il_est_rate", "jeanpierre" ,"jetmpapa", "jevsdemandedevsart", "papa_y_senva", "servietsky1", "servietsky10", "servietsky11", "servietsky12", "servietsky13", "servietsky14", "servietsky15", "servietsky16", "servietsky2", "servietsky3", "servietsky4", "servietsky5", "servietsky6", "servietsky7", "servietsky8", "servietsky9"};
 	
 	
 	
@@ -76,7 +77,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			sw.removeAllViews();llt.removeAllViews();genButton(PersonagesSouth,false,menu,true);sw.addView(llt);
 			
 		}else if(v.getId()==mllength+1){
-			sw.removeAllViews();llt.removeAllViews();genButton(Southpark,false,menu,true);sw.addView(llt);
+			sw.removeAllViews();llt.removeAllViews();genButton(PersonagesSimpson,false,menu,true);sw.addView(llt);
 			
 		}else if(v.getId()==mllength+2){
 			sw.removeAllViews();llt.removeAllViews();genButton(Southpark,false,menu,true);sw.addView(llt);
@@ -145,10 +146,10 @@ public void genButton(String[] ml,boolean AffMenu,String[] menu,boolean affMbutt
 		bml[indexb].setOnClickListener(this);
 		if(indexb%2==0){
 		bml[indexb].setBackgroundColor(Color.CYAN);
-		bml[indexb].setBackgroundResource(R.drawable.str);
+		 // bml[indexb].setBackgroundResource(R.drawable.str);
 		}else {
 			bml[indexb].setBackgroundColor(Color.GRAY);
-		bml[indexb].setBackgroundResource(R.drawable.stb);
+		 // bml[indexb].setBackgroundResource(R.drawable.stb);
 		
 		}
 	
