@@ -1,5 +1,7 @@
 package packet.idefix;
 
+import java.util.Random;
+
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
@@ -146,10 +148,14 @@ public void genButton(String[] ml,boolean AffMenu,String[] menu,boolean affMbutt
 		bml[indexb].setId(indexb);
 		bml[indexb].setOnClickListener(this);
 		if(indexb%2==0){
-		bml[indexb].setBackgroundColor(Color.CYAN);
+			Random rnd = new Random(); 
+			int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+		bml[indexb].setBackgroundColor(color);
 		 // bml[indexb].setBackgroundResource(R.drawable.str);
 		}else {
-			bml[indexb].setBackgroundColor(Color.GRAY);
+			Random rnd = new Random(); 
+			int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+			bml[indexb].setBackgroundColor(color);
 		 // bml[indexb].setBackgroundResource(R.drawable.stb);
 		
 		}
