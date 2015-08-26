@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="packet.idefixtest"
-    android:versionCode="2"
-    android:versionName="0.2" >
+    android:versionCode="015"
+    android:versionName="Alpha0.15" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
